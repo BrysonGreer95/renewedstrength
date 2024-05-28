@@ -2452,12 +2452,12 @@ h6,
 }
 
 a {
-    color: #9c27b0;
+    color: #3B3B3B;
 }
 
 a:hover,
 a:focus {
-    color: #89229b;
+    color: #3B3B3B;
     text-decoration: none;
 }
 

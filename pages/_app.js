@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* NextJS Material Kit v1.2.2 based on Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition) and Material Kit React v1.8.0
+* Renewed Strength v1.2.2 based on Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition) and Material Kit React v1.8.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/nextjs-material-kit
@@ -25,7 +25,7 @@ export default class MyApp extends App {
     let comment = document.createComment(`
 
 =========================================================
-* NextJS Material Kit v1.2.2 based on Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition) and Material Kit React v1.8.0
+* Renewed Strength v1.2.2 based on Material Kit Free - v2.0.2 (Bootstrap 4.0.0 Final Edition) and Material Kit React v1.8.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/nextjs-material-kit
@@ -60,7 +60,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>NextJS Material Kit by Creative Tim</title>
+          <title>Renewed Strength by Creative Tim</title>
         </Head>
         <Component {...pageProps} />
       </React.Fragment>

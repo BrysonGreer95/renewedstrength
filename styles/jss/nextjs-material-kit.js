@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * NextJS Material Kit - v1.2.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
+ * Renewed Strength - v1.2.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/nextjs-material-kit
@@ -90,7 +90,7 @@ const defaultFont = {
   lineHeight: "1.5em",
 };
 
-const primaryColor = "#9c27b0";
+const primaryColor = "#3B3B3B";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
