@@ -1,65 +1,54 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
+// react components for routing our app without refresh
+import Link from "next/link";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
 // @material-ui/icons
-
 // core components
 import Header from "/components/Header/Header.js";
+import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Footer from "/components/Footer/Footer.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Button from "/components/CustomButtons/Button.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
 
-import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
-
-// Sections for this page
-import PriceSection from "/pages-sections/LandingPage-Sections/PriceSection.js";
-import TeamSection from "/pages-sections/LandingPage-Sections/TeamSection.js";
-import WorkSection from "/pages-sections/LandingPage-Sections/WorkSection.js";
-
-const dashboardRoutes = [];
+import styles from "/styles/jss/nextjs-material-kit/pages/components.js";
 
 const useStyles = makeStyles(styles);
 
-export default function LandingPage(props) {
+export default function Landing(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
     <div>
       <Header
-        color="transparent"
-        routes={dashboardRoutes}
         brand="Renewed Strength"
         rightLinks={<HeaderLinks />}
         fixed
+        color="transparent"
         changeColorOnScroll={{
           height: 400,
           color: "white",
         }}
         {...rest}
       />
-      <Parallax filter responsive image="/img/landing-bg.jpg">
+      <Parallax image="/img/IMG_3652.jpg">
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Pricing</h1>
-              <h4>ToDo: Input pricing info description</h4>
-              <br />
+            <GridItem>
+              <div className={classes.brand}>
+                <h1 className={classes.title}>Renewed Strength</h1>
+                <h3 className={classes.subtitle}>Personal Training</h3>
+              </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <PriceSection />
-          <WorkSection />
-        </div>
-      </div>
+
+      <div className={classNames(classes.main, classes.mainRaised)}></div>
       <Footer />
     </div>
   );
